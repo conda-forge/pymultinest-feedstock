@@ -12,27 +12,25 @@ source:
   sha256: {{ sha256 }}
 
 build:
-   number: 0
+   number: 1
    skip: true  # [win]
-   skip: true  # [py3k]
 
 requirements:
-    
-  build:
-    - python x.x
+  host:
+    - python
     - multinest
-    - numpy 1.11.*
+    - numpy >=1.11
     - scipy
     - matplotlib
     - pytest
     - pytest-runner
 
   run:
-    - python x.x
+    - python
     - multinest
-    - numpy >=1.11
     - scipy
     - matplotlib
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
@@ -53,3 +51,4 @@ extra:
   recipe-maintainers:
     - giacomov
     - JohannesBuchner
+    - beckermr
