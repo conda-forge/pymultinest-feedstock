@@ -1,4 +1,4 @@
-python setup.py install --single-version-externally-managed --record record.txt
+${PYTHON} -m pip install . --no-deps -vv
 
 # PyMultinest contains also wrappers for Cuba and PolyChord,
 # which require separate binary libraries unrelated to multinest
@@ -10,7 +10,6 @@ python setup.py install --single-version-externally-managed --record record.txt
 site_packages_dir=$(python -c "import site; print(site.getsitepackages()[0])")
 
 rm -rf $site_packages_dir/pycuba
-rm -rf $site_packages_dir/pypolychord
 
 # Copy also the demo, might be useful for testing and for
 # understanding how to use pymultinest
