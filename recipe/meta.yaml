@@ -30,9 +30,6 @@ requirements:
 test:
   imports:
     - pymultinest
-  commands:
-    - python ${PREFIX}/share/pymultinest/pymultinest_demo_minimal.py
-
 
 about:
   home: http://johannesbuchner.github.com/PyMultiNest/
