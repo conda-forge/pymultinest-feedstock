@@ -1,6 +1,6 @@
 {% set name = "pymultinest" %}
-{% set version = "2.7" %}
-{% set sha256 = "fd7386b546582a51433d93e8bfd6d75fbe558199501f0568ce7e9a1cca0fa7c5" %}
+{% set version = "2.9" %}
+{% set sha256 = "f8a85ccc89c02c679c967f883b14cb75b1c23a627838dd950868eaf324a48edb" %}
 
 package:
   name: {{ name|lower }}
@@ -37,10 +37,10 @@ test:
 about:
   home: http://johannesbuchner.github.com/PyMultiNest/
   dev_url: https://github.com/JohannesBuchner/PyMultiNest
-  license: GPL-3.0-only
+  license: GPL3
   license_family: GPL
   license_file: LICENSE
-  summary: 'Access module for the MultiNest'
+  summary: 'Bayesian computations with the nested sampling algorithm MultiNest.'
 
 extra:
   recipe-maintainers:
