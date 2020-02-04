@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-   number: 2
+   number: 0
    skip: true  # [win]
 
 requirements:
@@ -30,9 +30,6 @@ requirements:
 test:
   imports:
     - pymultinest
-  commands:
-    - python ${PREFIX}/share/pymultinest/pymultinest_demo_minimal.py
-
 
 about:
   home: http://johannesbuchner.github.com/PyMultiNest/
