@@ -13,6 +13,5 @@ rm -rf $site_packages_dir/pycuba
 
 # Copy also the demo, might be useful for testing and for
 # understanding how to use pymultinest
-
-mkdir ${PREFIX}/share/pymultinest
-cp pymultinest_demo_minimal.py ${PREFIX}/share/pymultinest/pymultinest_demo_minimal.py
+# mkdir ${PREFIX}/share/pymultinest
+# cp pymultinest_demo_minimal.py ${PREFIX}/share/pymultinest/pymultinest_demo_minimal.py
