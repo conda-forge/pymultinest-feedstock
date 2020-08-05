@@ -1,6 +1,6 @@
 {% set name = "pymultinest" %}
-{% set version = "2.9" %}
-{% set sha256 = "f8a85ccc89c02c679c967f883b14cb75b1c23a627838dd950868eaf324a48edb" %}
+{% set version = "2.10" %}
+{% set sha256 = "9b70b9b8c576c267632e182ae0594f98d53eff3334a9ef8e8f31d0643a59df3c" %}
 
 package:
   name: {{ name|lower }}
@@ -11,8 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-   number: 2
-   skip: true  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   license: GPL3
   license_family: GPL
   license_file: LICENSE
-  summary: 'Bayesian computations with the nested sampling algorithm MultiNest.'
+  summary: Bayesian computations with the nested sampling algorithm MultiNest.
 
 extra:
   recipe-maintainers:
