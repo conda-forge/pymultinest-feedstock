@@ -1,6 +1,6 @@
 {% set name = "pymultinest" %}
-{% set version = "2.10" %}
-{% set sha256 = "9b70b9b8c576c267632e182ae0594f98d53eff3334a9ef8e8f31d0643a59df3c" %}
+{% set version = "2.11" %}
+{% set sha256 = "b853d3757875419827a1fd361c054f33db24b7360c1ef5db6dc90d2ee51e07ec" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
