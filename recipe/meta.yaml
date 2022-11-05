@@ -34,8 +34,7 @@ test:
 about:
   home: http://johannesbuchner.github.com/PyMultiNest/
   dev_url: https://github.com/JohannesBuchner/PyMultiNest
-  license: GPL3
-  license_family: GPL
+  license: GPL-3.0-only
   license_file: LICENSE
   summary: Bayesian computations with the nested sampling algorithm MultiNest.
 
