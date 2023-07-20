@@ -1,35 +1,40 @@
 {% set name = "pymultinest" %}
 {% set version = "2.11" %}
-{% set sha256 = "b853d3757875419827a1fd361c054f33db24b7360c1ef5db6dc90d2ee51e07ec" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymultinest-{{ version }}.tar.gz
+  sha256: b853d3757875419827a1fd361c054f33db24b7360c1ef5db6dc90d2ee51e07ec
 
 build:
-  number: 3
-  skip: true  # [win]
+  noarch: python
+  number: 4
 
 requirements:
   host:
+    - python >=3.6
     - pip
-    - python
     - pytest-runner
     - setuptools
   run:
-    - python
+    - python >=3.6
     - matplotlib-base
     - multinest
     - numpy >=1.11,<2.0a0
     - scipy
+    # doesn't work on windows
+    - __unix
 
 test:
   imports:
     - pymultinest
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://johannesbuchner.github.com/PyMultiNest/
