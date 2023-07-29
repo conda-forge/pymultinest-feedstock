@@ -1,5 +1,5 @@
 {% set name = "pymultinest" %}
-{% set version = "2.11" %}
+{% set version = "2.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymultinest-{{ version }}.tar.gz
-  sha256: b853d3757875419827a1fd361c054f33db24b7360c1ef5db6dc90d2ee51e07ec
+  sha256: a8ac6787fa0dd9b374a3a2e981d48a1975e935ac846a8083d209078443d3e90c
 
 build:
   noarch: python
-  number: 4
+  number: 0
 
 requirements:
   host:
