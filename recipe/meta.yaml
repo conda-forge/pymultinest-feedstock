@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - matplotlib-base
     - multinest
-    - numpy >=2
+    - numpy
     - scipy
     # doesn't work on windows
     - __unix
