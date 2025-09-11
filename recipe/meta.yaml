@@ -38,7 +38,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: http://johannesbuchner.github.com/PyMultiNest/
+  home: https://johannesbuchner.github.io/PyMultiNest/
   dev_url: https://github.com/JohannesBuchner/PyMultiNest
   license: GPL-3.0-only
   license_file: LICENSE
