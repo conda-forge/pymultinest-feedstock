@@ -3,7 +3,7 @@ About pymultinest-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymultinest-feedstock/blob/main/LICENSE.txt)
 
-Home: http://johannesbuchner.github.com/PyMultiNest/
+Home: https://johannesbuchner.github.io/PyMultiNest/
 
 Package license: GPL-3.0-only
 
